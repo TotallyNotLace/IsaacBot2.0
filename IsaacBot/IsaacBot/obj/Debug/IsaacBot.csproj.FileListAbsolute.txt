@@ -1,0 +1,10 @@
+C:\Users\jewer\Repose\WindowsForms\Isaac2.0\IsaacBot\IsaacBot\bin\Debug\IsaacBot.exe.config
+C:\Users\jewer\Repose\WindowsForms\Isaac2.0\IsaacBot\IsaacBot\bin\Debug\IsaacBot.exe
+C:\Users\jewer\Repose\WindowsForms\Isaac2.0\IsaacBot\IsaacBot\bin\Debug\IsaacBot.pdb
+C:\Users\jewer\Repose\WindowsForms\Isaac2.0\IsaacBot\IsaacBot\obj\Debug\IsaacBot.csproj.AssemblyReference.cache
+C:\Users\jewer\Repose\WindowsForms\Isaac2.0\IsaacBot\IsaacBot\obj\Debug\IsaacBot.mainForm.resources
+C:\Users\jewer\Repose\WindowsForms\Isaac2.0\IsaacBot\IsaacBot\obj\Debug\IsaacBot.Properties.Resources.resources
+C:\Users\jewer\Repose\WindowsForms\Isaac2.0\IsaacBot\IsaacBot\obj\Debug\IsaacBot.csproj.GenerateResource.cache
+C:\Users\jewer\Repose\WindowsForms\Isaac2.0\IsaacBot\IsaacBot\obj\Debug\IsaacBot.csproj.CoreCompileInputs.cache
+C:\Users\jewer\Repose\WindowsForms\Isaac2.0\IsaacBot\IsaacBot\obj\Debug\IsaacBot.exe
+C:\Users\jewer\Repose\WindowsForms\Isaac2.0\IsaacBot\IsaacBot\obj\Debug\IsaacBot.pdb
