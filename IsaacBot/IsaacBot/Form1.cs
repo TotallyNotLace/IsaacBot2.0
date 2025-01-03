@@ -41,5 +41,10 @@ namespace IsaacBot
             consoleTextBox.AppendText($"working {numbers} \r\n");
             numbers++;
         }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            TwitchConnector connector = new TwitchConnector();
+        }
     }
 }

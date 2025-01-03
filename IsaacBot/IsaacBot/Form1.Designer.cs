@@ -199,6 +199,7 @@
             this.btnStart.TabIndex = 6;
             this.btnStart.Text = "Connect";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // textBox2
             // 
