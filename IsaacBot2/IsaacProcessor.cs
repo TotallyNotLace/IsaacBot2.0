@@ -12,6 +12,9 @@ namespace IsaacBot2
         //stop event for errors found.
         public event Action stopCalled;
 
+        //console event
+        public event Action<string> CallConsole;
+
         //this is the list that holds the loaded command objects
         private List<UserCommand> _activeCommands = new List<UserCommand>();
 
@@ -59,14 +62,15 @@ namespace IsaacBot2
             catch (Exception ex)
             {
                 Console.WriteLine($"Error reading CSV: {ex.Message}");
-                stopCalled.Invoke();
+                stopCalled?.Invoke();
             }
 
             return commands;
         }
 
         //contructor (duh). Here we will set our configuration from the forms app and initialize some of our hard vars.
-        public IsaacProcessor()
+
+        public void ActivateProcessor(Action<string> consoleEvent)
         {
             //first we define the oven.bake file. This file should exist in the same folder as the main.lua and the exe for the bot
             ovenFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "oven.bake");
@@ -75,12 +79,13 @@ namespace IsaacBot2
             _activeCommands = LoadCommands(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "commands.csv"));
 
             //handling for if the commands file is empty. This will call an event that safely stops the bot. 
-            if(_activeCommands.Count == 0 )
+            if (_activeCommands.Count == 0)
             {
                 stopCalled?.Invoke();
             }
 
-
+            CallConsole = consoleEvent;
+            CallConsole.Invoke("Isaac Processor is now online.");
         }
 
         public void CheckCommand(string inputCommand)
@@ -94,6 +99,7 @@ namespace IsaacBot2
                     if(command.UseTime <  DateTime.Now || _cooldownsAreEnabled)
                     {
                         Console.WriteLine("command is off of cooldown");
+                        CallConsole.Invoke("Command incoming!");
                         command.UseTime = DateTime.UtcNow.AddSeconds(command.Cooldown);
                         BakeCommand(command.Code);
                     }

@@ -22,7 +22,6 @@ namespace IsaacBot2
         {
             InitializeComponent();
             CallConsole += UpdateTextInConsole;
-
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -34,16 +33,19 @@ namespace IsaacBot2
         private void btnStop_Click(object sender, EventArgs e)
         {
             ToggleObjects(true);
-            connector = null;
-            //unsub from events
-            //delete object
-            //enable objects
+            connector.StopBot();
         }
 
         private void StartTheBot()
         {
-            connector = new TwitchClientConnector();
-            connector.Initialize();
+            //if a connector was not made already, make a new one
+            if(connector == null)
+            {
+                connector = new TwitchClientConnector();
+            }
+
+            //activate the twitch connector
+            connector.BotActivator(OnBotMessageReceived);
         }
 
         private void ToggleObjects(bool enable)
@@ -54,12 +56,26 @@ namespace IsaacBot2
 
         private void btnDoThings_Click(object sender, EventArgs e)
         {
-            CallConsole.Invoke("Do Things Was Pressed");
+
         }
 
-        private void UpdateTextInConsole(string consoleMessage)
+        //delegate thats passed to things.
+        private void OnBotMessageReceived(string message)
         {
-            txtConsole.AppendText($"{consoleMessage}\r\n");
+            CallConsole?.Invoke(message);
+        }
+
+        private void UpdateTextInConsole(string message)
+        {
+            // Ensure this runs on the UI thread
+            if (InvokeRequired)
+            {
+                Invoke(new Action<string>(UpdateTextInConsole), message);
+            }
+            else
+            {
+                txtConsole.AppendText(message + Environment.NewLine); // Assuming a TextBox named txtConsole
+            }
         }
     }
 }

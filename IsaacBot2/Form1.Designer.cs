@@ -36,7 +36,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(199, 90);
+            this.btnStart.Location = new System.Drawing.Point(86, 32);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 0;
@@ -58,10 +58,10 @@
             // txtConsole
             // 
             this.txtConsole.Enabled = false;
-            this.txtConsole.Location = new System.Drawing.Point(86, 280);
+            this.txtConsole.Location = new System.Drawing.Point(12, 280);
             this.txtConsole.Multiline = true;
             this.txtConsole.Name = "txtConsole";
-            this.txtConsole.Size = new System.Drawing.Size(521, 106);
+            this.txtConsole.Size = new System.Drawing.Size(776, 158);
             this.txtConsole.TabIndex = 2;
             // 
             // btnDoThings

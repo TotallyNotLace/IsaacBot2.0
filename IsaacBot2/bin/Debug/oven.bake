@@ -1,1 +1,2 @@
 player:UseActiveItem(CollectibleType.COLLECTIBLE_ANARCHIST_COOKBOOK,1)
+Isaac.Spawn(EntityType.ENTITY_DIP, 1, 0, arandomspot, Vector(0, 0), player)

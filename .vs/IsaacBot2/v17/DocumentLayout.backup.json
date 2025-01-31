@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jewer\\source\\repos\\IsaacBot2.0\\",
+  "WorkspaceRootPath": "C:\\Users\\jewer\\Repose\\WindowsForms\\IsaacBot2.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|c:\\users\\jewer\\source\\repos\\isaacbot2.0\\isaacbot2\\isaacprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|solutionrelative:isaacbot2\\isaacprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|c:\\users\\jewer\\source\\repos\\isaacbot2.0\\isaacbot2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|solutionrelative:isaacbot2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|c:\\users\\jewer\\source\\repos\\isaacbot2.0\\isaacbot2\\twitchclientconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|c:\\users\\jewer\\repose\\windowsforms\\isaacbot2.0\\isaacbot2\\twitchclientconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|solutionrelative:isaacbot2\\twitchclientconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|c:\\users\\jewer\\source\\repos\\isaacbot2.0\\isaacbot2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|c:\\users\\jewer\\repose\\windowsforms\\isaacbot2.0\\isaacbot2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|solutionrelative:isaacbot2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|c:\\users\\jewer\\repose\\windowsforms\\isaacbot2.0\\isaacbot2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|solutionrelative:isaacbot2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|c:\\users\\jewer\\repose\\windowsforms\\isaacbot2.0\\isaacbot2\\isaacprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|solutionrelative:isaacbot2\\isaacprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|c:\\users\\jewer\\repose\\windowsforms\\isaacbot2.0\\isaacbot2\\isaacoven.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3DAD09-73C4-43E5-BD16-5053A3010872}|IsaacBot2\\IsaacBot2.csproj|solutionrelative:isaacbot2\\isaacoven.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,62 +30,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IsaacProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\jewer\\source\\repos\\IsaacBot2.0\\IsaacBot2\\IsaacProcessor.cs",
-              "RelativeDocumentMoniker": "IsaacBot2\\IsaacProcessor.cs",
-              "ToolTip": "C:\\Users\\jewer\\source\\repos\\IsaacBot2.0\\IsaacBot2\\IsaacProcessor.cs",
-              "RelativeToolTip": "IsaacBot2\\IsaacProcessor.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T02:17:27.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TwitchClientConnector.cs",
-              "DocumentMoniker": "C:\\Users\\jewer\\source\\repos\\IsaacBot2.0\\IsaacBot2\\TwitchClientConnector.cs",
-              "RelativeDocumentMoniker": "IsaacBot2\\TwitchClientConnector.cs",
-              "ToolTip": "C:\\Users\\jewer\\source\\repos\\IsaacBot2.0\\IsaacBot2\\TwitchClientConnector.cs",
-              "RelativeToolTip": "IsaacBot2\\TwitchClientConnector.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAADUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T01:49:56.697Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\jewer\\source\\repos\\IsaacBot2.0\\IsaacBot2\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\jewer\\Repose\\WindowsForms\\IsaacBot2.0\\IsaacBot2\\Form1.cs",
               "RelativeDocumentMoniker": "IsaacBot2\\Form1.cs",
-              "ToolTip": "C:\\Users\\jewer\\source\\repos\\IsaacBot2.0\\IsaacBot2\\Form1.cs",
+              "ToolTip": "C:\\Users\\jewer\\Repose\\WindowsForms\\IsaacBot2.0\\IsaacBot2\\Form1.cs",
               "RelativeToolTip": "IsaacBot2\\Form1.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAD8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T01:42:51.759Z",
+              "WhenOpened": "2025-01-31T15:12:33.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TwitchClientConnector.cs",
+              "DocumentMoniker": "C:\\Users\\jewer\\Repose\\WindowsForms\\IsaacBot2.0\\IsaacBot2\\TwitchClientConnector.cs",
+              "RelativeDocumentMoniker": "IsaacBot2\\TwitchClientConnector.cs",
+              "ToolTip": "C:\\Users\\jewer\\Repose\\WindowsForms\\IsaacBot2.0\\IsaacBot2\\TwitchClientConnector.cs",
+              "RelativeToolTip": "IsaacBot2\\TwitchClientConnector.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAwwFQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T15:12:25.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "IsaacProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\jewer\\Repose\\WindowsForms\\IsaacBot2.0\\IsaacBot2\\IsaacProcessor.cs",
+              "RelativeDocumentMoniker": "IsaacBot2\\IsaacProcessor.cs",
+              "ToolTip": "C:\\Users\\jewer\\Repose\\WindowsForms\\IsaacBot2.0\\IsaacBot2\\IsaacProcessor.cs",
+              "RelativeToolTip": "IsaacBot2\\IsaacProcessor.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEYAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T15:12:22.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jewer\\source\\repos\\IsaacBot2.0\\IsaacBot2\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\jewer\\Repose\\WindowsForms\\IsaacBot2.0\\IsaacBot2\\Form1.cs",
               "RelativeDocumentMoniker": "IsaacBot2\\Form1.cs",
-              "ToolTip": "C:\\Users\\jewer\\source\\repos\\IsaacBot2.0\\IsaacBot2\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\jewer\\Repose\\WindowsForms\\IsaacBot2.0\\IsaacBot2\\Form1.cs [Design]",
               "RelativeToolTip": "IsaacBot2\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T01:42:49.509Z",
+              "WhenOpened": "2025-01-31T15:12:32.466Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IsaacOven.cs",
+              "DocumentMoniker": "C:\\Users\\jewer\\Repose\\WindowsForms\\IsaacBot2.0\\IsaacBot2\\IsaacOven.cs",
+              "RelativeDocumentMoniker": "IsaacBot2\\IsaacOven.cs",
+              "ToolTip": "C:\\Users\\jewer\\Repose\\WindowsForms\\IsaacBot2.0\\IsaacBot2\\IsaacOven.cs",
+              "RelativeToolTip": "IsaacBot2\\IsaacOven.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T15:12:28.081Z",
+              "EditorCaption": ""
             }
           ]
         }

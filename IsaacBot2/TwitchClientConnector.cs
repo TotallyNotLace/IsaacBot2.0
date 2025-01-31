@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using TwitchLib.Client;
@@ -11,6 +12,9 @@ namespace IsaacBot2
     internal class TwitchClientConnector
     {
         public event Action twitchStopCalled;
+
+        public event Action<string> CallConsole;
+
 
         public TwitchClient client;
         public ConnectionCredentials credentials;
@@ -30,13 +34,30 @@ namespace IsaacBot2
         private IsaacProcessor isaacProcessor;
 
 
-        //take channel name //take bot username //take access token
-        public void Initialize()
+        public void BotActivator(Action<string> consoleEvent)
         {
-            client = new TwitchClient();
+            if (client == null)
+            {
+                client = new TwitchClient();
+            }
+
+            Console.WriteLine(client);
+            if(credentials != null)
+            {
+                credentials = null;
+            }
+
             credentials = new ConnectionCredentials(botUsername, accessCLIToken);
 
-            isaacProcessor = new IsaacProcessor();
+            CallConsole = consoleEvent;
+
+            if(isaacProcessor == null)
+            {
+                isaacProcessor = new IsaacProcessor();
+            }
+
+            isaacProcessor.ActivateProcessor(ConsoleDelegate);
+
             isaacProcessor.stopCalled += OnIsaacProcessorCrash;
 
             client.OnConnected += OnConnected;
@@ -46,20 +67,16 @@ namespace IsaacBot2
             client.Connect();
         }
 
-        public void SetupEvents()
-        {
-
-        }
-
         private void OnMessageReceived(object sender, TwitchLib.Client.Events.OnMessageReceivedArgs e)
         {
             Console.WriteLine($"{e.ChatMessage.Username}:{e.ChatMessage.Message}");
+            CallConsole.Invoke($"{e.ChatMessage.Username}:{e.ChatMessage.Message}");
             isaacProcessor.CheckCommand(e.ChatMessage.Message);
         }
 
         private void OnJoinedChannel(object sender, TwitchLib.Client.Events.OnJoinedChannelArgs e)
         {
-            Console.WriteLine($"In a channel! {e.Channel}");
+            CallConsole.Invoke($"In the channel: {e.Channel}");
             client.SendMessage(e.Channel, "hello!");
         }
 
@@ -72,9 +89,26 @@ namespace IsaacBot2
         private void OnIsaacProcessorCrash()
         {
             isaacProcessor.stopCalled -= OnIsaacProcessorCrash;
-            isaacProcessor = null;
-
+            client.Disconnect();
             twitchStopCalled.Invoke();
+        }
+
+        private void ConsoleDelegate(string message)
+        {
+            CallConsole.Invoke(message);
+        }
+
+        public void StopBot()
+        {
+            isaacProcessor.stopCalled -= OnIsaacProcessorCrash;
+            client.OnConnected -= OnConnected;
+            client.OnJoinedChannel -= OnJoinedChannel;
+            client.OnMessageReceived -= OnMessageReceived;
+
+            CallConsole("Stopping Bot");
+
+            client.LeaveChannel("TotallyNotLace");
+            client.Disconnect();
         }
     }
 }
