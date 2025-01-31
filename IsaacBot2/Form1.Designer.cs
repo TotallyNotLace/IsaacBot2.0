@@ -30,6 +30,8 @@
         {
             this.btnStart = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
+            this.txtConsole = new System.Windows.Forms.TextBox();
+            this.btnDoThings = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnStart
@@ -53,16 +55,38 @@
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
+            // txtConsole
+            // 
+            this.txtConsole.Enabled = false;
+            this.txtConsole.Location = new System.Drawing.Point(86, 280);
+            this.txtConsole.Multiline = true;
+            this.txtConsole.Name = "txtConsole";
+            this.txtConsole.Size = new System.Drawing.Size(521, 106);
+            this.txtConsole.TabIndex = 2;
+            // 
+            // btnDoThings
+            // 
+            this.btnDoThings.Location = new System.Drawing.Point(367, 32);
+            this.btnDoThings.Name = "btnDoThings";
+            this.btnDoThings.Size = new System.Drawing.Size(75, 23);
+            this.btnDoThings.TabIndex = 3;
+            this.btnDoThings.Text = "Do Things";
+            this.btnDoThings.UseVisualStyleBackColor = true;
+            this.btnDoThings.Click += new System.EventHandler(this.btnDoThings_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDoThings);
+            this.Controls.Add(this.txtConsole);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
             this.Name = "mainForm";
             this.Text = "Isaac Bot 2.0";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -70,6 +94,8 @@
 
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnStop;
+        private System.Windows.Forms.TextBox txtConsole;
+        private System.Windows.Forms.Button btnDoThings;
     }
 }
 

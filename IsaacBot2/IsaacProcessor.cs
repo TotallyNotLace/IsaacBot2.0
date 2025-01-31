@@ -1,12 +1,8 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.FileIO;
+using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-using System.Reflection.Emit;
+using TwitchLib.Api.Helix.Models.Streams.GetStreamMarkers;
 
 namespace IsaacBot2
 {
@@ -32,33 +28,38 @@ namespace IsaacBot2
 
             try
             {
-                var reader = new StreamReader(filePath);
-                bool isHeader = true;
-
-                while (!reader.EndOfStream)
+                using (var reader = new StreamReader(filePath))
+                using (var parser = new TextFieldParser(reader))
                 {
-                    var line = reader.ReadLine();
-                    if (isHeader) // Skip the header row
-                    {
-                        isHeader = false;
-                        continue;
-                    }
+                    parser.SetDelimiters(","); // Set delimiter as comma
+                    parser.HasFieldsEnclosedInQuotes = true;
 
-                    var values = line.Split(','); // Assumes CSV is comma-separated
+                    bool isHeader = true;
 
-                    if (values.Length == 3 && int.TryParse(values[1], out int cooldown))
+                    while (!parser.EndOfData)
                     {
-                        commands.Add(new UserCommand(values[0], cooldown, values[2]));
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Skipping invalid row: {line}");
+                        var values = parser.ReadFields(); // Reads a full row, respecting quotes
+                        if (isHeader) // Skip the header row
+                        {
+                            isHeader = false;
+                            continue;
+                        }
+
+                        if (values != null && values.Length == 3 && int.TryParse(values[1], out int cooldown))
+                        {
+                            commands.Add(new UserCommand(values[0], cooldown, values[2]));
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Skipping invalid row: {string.Join(",", values ?? new string[0])}");
+                        }
                     }
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error reading CSV: {ex.Message}");
+                stopCalled.Invoke();
             }
 
             return commands;

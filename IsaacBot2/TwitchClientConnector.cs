@@ -46,6 +46,11 @@ namespace IsaacBot2
             client.Connect();
         }
 
+        public void SetupEvents()
+        {
+
+        }
+
         private void OnMessageReceived(object sender, TwitchLib.Client.Events.OnMessageReceivedArgs e)
         {
             Console.WriteLine($"{e.ChatMessage.Username}:{e.ChatMessage.Message}");

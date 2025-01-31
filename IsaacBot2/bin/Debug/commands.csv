@@ -1,3 +1,169 @@
 Text,Cooldown,Code
-thedip,6,summonadip
-nodip,4,summonnodip
+trollbomb,30,"player:UseActiveItem(CollectibleType.COLLECTIBLE_ANARCHIST_COOKBOOK,1)"
+penny,30,"player:UseActiveItem(CollectibleType.COLLECTIBLE_WOODEN_NICKEL,1)"
+metronome,30,"player:UseActiveItem(CollectibleType.COLLECTIBLE_METRONOME,1)"
+goodfly,30,"player:UseActiveItem(CollectibleType.COLLECTIBLE_GUPPYS_HEAD,1)"
+poop,30,"player:UseActiveItem(CollectibleType.COLLECTIBLE_POOP,1)"
+diceroll,30,"player:UseActiveItem(CollectibleType.COLLECTIBLE_DINF,1)"
+heal,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_YUM_HEART)
+lemon,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_LEMON_MISHAP)
+fart,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_BUTTER_BEAN)
+waitwhat,30,"player:UseActiveItem(CollectibleType.COLLECTIBLE_WAIT_WHAT,1)"
+trinket,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_MOMS_BOX)
+hocuspocus,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_DEAD_SEA_SCROLLS)
+friendinabox,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_BOX_OF_FRIENDS)
+flyturret,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_BROWN_NUGGET)
+turret,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_SPRINKLER)
+shakethemachine,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_SHARP_STRAW)
+ragesmash,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_DELIRIOUS)
+multishot,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_TAMMYS_HEAD)
+pause,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_PAUSE)
+dynomite,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_MINE_CRAFTER)
+mapping,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_BOOK_OF_SECRETS)
+unlock,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_DADS_KEY)
+threwitontheground,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_BOOK_OF_SIN)
+swallow,30,"player:UsePill(PillEffect.PILLEFFECT_GULP, PillColor.PILL_NULL)"
+ballsofsteel,30,"player:UsePill(PillEffect.PILLEFFECT_BALLS_OF_STEEL, PillColor.PILL_NULL)"
+flyshield,30,"player:UsePill(PillEffect.PILLEFFECT_PRETTY_FLY, PillColor.PILL_NULL)"
+rangeup,30,"player:UsePill(PillEffect.PILLEFFECT_RANGE_UP, PillColor.PILL_NULL)"
+lucky,30,"player:UsePill(PillEffect.PILLEFFECT_LUCK_UP, PillColor.PILL_NULL)"
+badluck,30,"player:UsePill(PillEffect.PILLEFFECT_LUCK_DOWN, PillColor.PILL_NULL)"
+hematemesis,30,"player:UsePill(PillEffect.PILLEFFECT_HEMATEMESIS, PillColor.PILL_NULL)"
+freeze,30,"player:UsePill(PillEffect.PILLEFFECT_PARALYSIS, PillColor.PILL_NULL)"
+telepillz,30,"player:UsePill(PillEffect.PILLEFFECT_TELEPILLS, PillColor.PILL_NULL)"
+pacmanfever,30,"player:UsePill(PillEffect.PILLEFFECT_POWER, PillColor.PILL_NULL)"
+monster,30,"player:UsePill(PillEffect.PILLEFFECT_48HOUR_ENERGY, PillColor.PILL_NULL)"
+boompoo,30,"player:UsePill(PillEffect.PILLEFFECT_EXPLOSIVE_DIARRHEA, PillColor.PILL_NULL)"
+protect,30,"player:UsePill(PillEffect.PILLEFFECT_PERCS, PillColor.PILL_NULL)"
+weaken,30,"player:UsePill(PillEffect.PILLEFFECT_ADDICTED, PillColor.PILL_NULL)"
+2for1acorns,30,"player:UseCard(Card.RUNE_JERA, Card.RUNE_JERA)"
+consume,30,"player:UseCard(Card.RUNE_BLACK, Card.RUNE_BLACK)"
+destruction,30,"player:UseCard(Card.RUNE_HAGALAZ, Card.RUNE_HAGALAZ)"
+cursebegone,30,"player:UseCard(Card.RUNE_DAGAZ, Card.RUNE_DAGAZ)"
+stomp,30,"player:UseCard(Card.CARD_HIGH_PRIESTESS, Card.CARD_HIGH_PRIESTESS)"
+aceofbombs,30,"player:UseCard(Card.CARD_ACE_OF_CLUBS, Card.CARD_ACE_OF_CLUBS)"
+aceofkeys,30,"player:UseCard(Card.CARD_ACE_OF_SPADES, Card.CARD_ACE_OF_SPADES)"
+aceofhearts,30,"player:UseCard(Card.CARD_ACE_OF_HEARTS, Card.CARD_ACE_OF_HEARTS)"
+aceofcoins,30,"player:UseCard(Card.CARD_ACE_OF_DIAMONDS, Card.CARD_ACE_OF_DIAMONDS)"
+annoy,30,"player:UseCard(Card.CARD_RULES, Card.CARD_RULES)"
+strength,30,"player:UseCard(Card.CARD_STRENGTH, Card.CARD_STRENGTH)"
+sojiro,30,"player:UseCard(Card.CARD_HIEROPHANT, Card.CARD_HIEROPHANT)"
+tacobell,30,"player:UseCard(Card.CARD_HUMANITY, Card.CARD_HUMANITY)"
+badfly,30,"Isaac.Spawn(EntityType.ENTITY_ATTACKFLY, 1, 0, arandomspot, Vector(0, 0), player)"
+maggot,30,"Isaac.Spawn(EntityType.ENTITY_MAGGOT, 1, 0, arandomspot, Vector(0, 0), player)"
+dipman,30,"Isaac.Spawn(EntityType.ENTITY_DIP, 1, 0, arandomspot, Vector(0, 0), player)"
+thehost,30,"Isaac.Spawn(EntityType.ENTITY_HOST, 1, 0, arandomspot, Vector(0, 0), player)"
+hophop,30,"Isaac.Spawn(EntityType.ENTITY_HOPPER, 1, 0, arandomspot, Vector(0, 0), player)"
+bigbeautifulfriend,30,"Isaac.Spawn(EntityType.ENTITY_BOOMFLY, 1, 0, arandomspot, Vector(0, 0), player)"
+mullitover,30,"Isaac.Spawn(EntityType.ENTITY_MULLIGAN, 1, 0, arandomspot, Vector(0, 0), player)"
+pootpoot,30,"Isaac.Spawn(EntityType.ENTITY_POOTER, 1, 0, arandomspot, Vector(0, 0), player)"
+spiders,30,"Isaac.Spawn(EntityType.ENTITY_SPIDER, 1, 0, arandomspot, Vector(0, 0), player)"
+envytime,30,"Isaac.Spawn(EntityType.ENTITY_ENVY, 1, 0, arandomspot, Vector(0, 0), player)"
+freetheitems,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_COUPON)
+goldenticket,300,player:UseActiveItem(CollectibleType.COLLECTIBLE_TELEPORT_2)
+badticket,300,player:UseActiveItem(CollectibleType.COLLECTIBLE_UNDEFINED)
+zoom,300,"player:UseCard(Card.CARD_FOOL, Card.CARD_FOOL)"
+upupdowndownleftrightleftrightbastart,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_DIPLOPIA)
+chronoboost,300,player:UseActiveItem(CollectibleType.COLLECTIBLE_GLOWING_HOUR_GLASS)
+slowtime,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_HOURGLASS)
+murdertime,6000,player:UseCard(Card.CARD_SUICIDE_KING)
+forgetmenot,600,player:UseActiveItem(CollectibleType.COLLECTIBLE_FORGET_ME_NOW)
+nobody,30,player:UseCard(Card.CARD_HANGED_MAN)
+bigoof,30,"player:UsePill(PillEffect.PILLEFFECT_LARGER, PillColor.PILL_NULL)"
+smalloof,30,"player:UsePill(PillEffect.PILLEFFECT_SMALLER, PillColor.PILL_NULL)"
+necronomicon,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_NECRONOMICON)
+scaryyy,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_MOMS_BRA)
+explosion,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_KAMIKAZE)
+boomboom,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_MR_BOOM)
+moarpower,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_BOOK_OF_BELIAL)
+imfiringmylazer,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_SHOOP_DA_WHOOP)
+forwardshields,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_BOOK_OF_SHADOWS)
+unicornwizard,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_MY_LITTLE_UNICORN)
+etrigan,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_THE_NAIL)
+horseman,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_BOOK_REVELATIONS)
+escapehatch,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_WE_NEED_GO_DEEPER)
+ifoundpillz,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_MOMS_BOTTLE_PILLS)
+guillotine,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_PINKING_SHEARS)
+monmanman,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_MONSTER_MANUAL)
+owwhywouldyoudothat,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_RAZOR_BLADE)
+deckofcards,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_DECK_OF_CARDS)
+deadpony,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_PONY)
+candle,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_CANDLE)
+minecraftman,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_NOTCHED_AXE)
+foresight,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_CRYSTAL_BALL)
+spiderbutt,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_SPIDER_BUTT)
+gamblingimin,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_PORTABLE_SLOT)
+whitepony,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_WHITE_PONY)
+owwhywouldyoucutme,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_BLOOD_RIGHTS)
+telepathy,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_TELEPATHY_BOOK)
+jumpman,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_HOW_TO_JUMP)
+blank,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_BLANK_CARD)
+placebo,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_PLACEBO)
+redcandle,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_RED_CANDLE)
+flush,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_FLUSH)
+unholymotherofhealing,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_SATANIC_BIBLE)
+soultaker,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_CONVERTER)
+lifetaker,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_GUPPYS_PAW)
+pandora,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_BLUE_BOX)
+megafart,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_MEGA_BEAN)
+boomerang,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_BOOMERANG)
+friendlyball,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_FRIEND_BALL)
+tear detonator,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_TEAR_DETONATOR)
+portals,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_VENTRICLE_RAZOR)
+lovelyfart,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_KIDNEY_BEAN)
+bigbeam,600,player:UseActiveItem(CollectibleType.COLLECTIBLE_MEGA_SATANS_BREATH)
+abortion,6000,player:UseActiveItem(CollectibleType.COLLECTIBLE_PLAN_C)
+seeingdouble,5,player:UseActiveItem(CollectibleType.COLLECTIBLE_D1)
+void,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_VOID)
+compost,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_COMPOST)
+dataminer,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_DATAMINER)
+hiexplosives,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_MAMA_MEGA)
+crookedacorn,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_CROOKED_PENNY)
+dullowowow,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_DULL_RAZOR)
+healthtaker,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_POTATO_PEELER)
+telekinesis,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_TELEKINESIS)
+sacrifice,30,player:UseActiveItem(CollectibleType.COLLECTIBLE_SACRIFICIAL_ALTAR)
+takameki,30,player:UseCard(Card.CARD_LOVERS)
+akechi,30,player:UseCard(Card.CARD_JUSTICE)
+mifune,30,player:UseCard(Card.CARD_WHEEL_OF_FORTUNE)
+kawakami,30,player:UseCard(Card.CARD_TEMPERANCE)
+takemi,30,player:UseCard(Card.CARD_DEATH)
+yoshida,30,player:UseCard(Card.CARD_SUN)
+izanagi,30,player:UseCard(Card.CARD_WORLD)
+nijima,30,player:UseCard(Card.CARD_JUDGEMENT)
+joker,30,player:UseCard(Card.CARD_JOKER)
+microtransaction,30,player:UseCard(Card.CARD_CREDIT)
+armor,30,player:UseCard(Card.RUNE_ALGIZ)
+vision,30,player:UseCard(Card.RUNE_ANSUZ)
+change,30,player:UseCard(Card.RUNE_PERTHRO)
+friends,30,player:UseCard(Card.RUNE_BERKANO)
+things,30,player:UseCard(Card.CARD_QUESTIONMARK)
+holycard,30,player:UseCard(Card.CARD_HOLY)
+cardseverywhere,30,player:UseCard(Card.CARD_ANCIENT_RECALL)
+erawalk,30,player:UseCard(Card.CARD_ERA_WALK)
+doomdoomdoom,30,player:UseCard(Card.CARD_DEVIL)
+huge,30,player:UseCard(Card.CARD_HUGE_GROWTH)
+buttlicker,30,"Isaac.Spawn(EntityType.ENTITY_BUTTLICKER, 1, 0, arandomspot, Vector(0, 0), player)"
+clotty,30,"Isaac.Spawn(EntityType.ENTITY_CLOTTY, 1, 0, arandomspot, Vector(0, 0), player)"
+embryo,30,"Isaac.Spawn(EntityType.ENTITY_EMBRYO, 1, 0, arandomspot, Vector(0, 0), player)"
+fatty,30,"Isaac.Spawn(EntityType.ENTITY_FATTY, 1, 0, arandomspot, Vector(0, 0), player)"
+fred,30,"Isaac.Spawn(EntityType.ENTITY_FRED, 1, 0, arandomspot, Vector(0, 0), player)"
+gaper,30,"Isaac.Spawn(EntityType.ENTITY_GAPER, 1, 0, arandomspot, Vector(0, 0), player)"
+globlin,30,"Isaac.Spawn(EntityType.ENTITY_GLOBIN, 1, 0, arandomspot, Vector(0, 0), player)"
+walkinghost,30,"Isaac.Spawn(EntityType.ENTITY_HOST, 3, 0, arandomspot, Vector(0, 0), player)"
+tenticles,30,"Isaac.Spawn(EntityType.ENTITY_NERVE_ENDING, 1, 0, arandomspot, Vector(0, 0), player)"
+portal,30,"Isaac.Spawn(EntityType.ENTITY_PORTAL, 1, 0, arandomspot, Vector(0, 0), player)"
+tumor,30,"Isaac.Spawn(EntityType.ENTITY_TUMOR, 1, 0, arandomspot, Vector(0, 0), player)"
+vis,30,"Isaac.Spawn(EntityType.ENTITY_VIS, 1, 0, arandomspot, Vector(0, 0), player)"
+round worm,30,"Isaac.Spawn(EntityType.ENTITY_ROUND_WORM, 1, 0, arandomspot, Vector(0, 0), player)"
+bigpspiders,30,"Isaac.Spawn(EntityType.ENTITY_BIGSPIDER, 1, 0, arandomspot, Vector(0, 0), player)"
+giveahand,30,player:UseCard(Card.CARD_EMERGENCY_CONTACT)
+thewizard,30,"player:UsePill(PillEffect.PILLEFFECT_WIZARD, PillColor.PILL_NULL)"
+redchest,30,"Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_REDCHEST, 0, arandomspot, Vector(0,0), nil)"
+goldchest,30,"Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LOCKEDCHEST, 0, arandomspot, Vector(0,0), nil)"
+normalchest,30,"Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_CHEST, 0, arandomspot, Vector(0,0), nil)"
+painchest,30,"Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_SPIKEDCHEST, 0, arandomspot, Vector(0,0), nil)"
+boomchest,30,"Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_BOMBCHEST, 0, arandomspot, Vector(0,0), nil)"
+nickel,150,"Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COIN, 2, arandomspot, Vector(0,0), nil)"
+dime,300,"Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COIN, 3, arandomspot, Vector(0,0), nil)"
+stickymoney,10,"Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COIN, 6, arandomspot, Vector(0,0), nil)"

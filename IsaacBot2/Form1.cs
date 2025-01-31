@@ -12,12 +12,17 @@ namespace IsaacBot2
 {
     public partial class mainForm : Form
     {
+
         // event here
+        public event Action<string> CallConsole;
+
         TwitchClientConnector connector;
 
         public mainForm()
         {
             InitializeComponent();
+            CallConsole += UpdateTextInConsole;
+
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -38,12 +43,23 @@ namespace IsaacBot2
         private void StartTheBot()
         {
             connector = new TwitchClientConnector();
+            connector.Initialize();
         }
 
         private void ToggleObjects(bool enable)
         {
             btnStart.Enabled = enable;
             btnStop.Enabled = !enable;
+        }
+
+        private void btnDoThings_Click(object sender, EventArgs e)
+        {
+            CallConsole.Invoke("Do Things Was Pressed");
+        }
+
+        private void UpdateTextInConsole(string consoleMessage)
+        {
+            txtConsole.AppendText($"{consoleMessage}\r\n");
         }
     }
 }
