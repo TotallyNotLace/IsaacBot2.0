@@ -109,6 +109,8 @@ namespace IsaacBot2
 
             client.LeaveChannel("TotallyNotLace");
             client.Disconnect();
+            client = null;
+            isaacProcessor = null;
         }
     }
 }

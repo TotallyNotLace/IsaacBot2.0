@@ -34,6 +34,7 @@ namespace IsaacBot2
         {
             ToggleObjects(true);
             connector.StopBot();
+            connector = null;
         }
 
         private void StartTheBot()
